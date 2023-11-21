@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="3.1">
+
+    <!-- Servlet配置 -->
+    <servlet>
+        <servlet-name>SharedDataServlet</servlet-name>
+        <servlet-class>com.yourpackage.SharedDataServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ReadParametersServlet</servlet-name>
+        <servlet-class>com.yourpackage.ReadParametersServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>IndexDisplayServlet</servlet-name>
+        <servlet-class>com.yourpackage.IndexDisplayServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>AnotherServlet</servlet-name>
+        <servlet-class>com.yourpackage.AnotherServlet</servlet-class>
+    </servlet>
+
+
+
+    <!-- Servlet映射 -->
+
+    <servlet-mapping>
+        <servlet-name>SharedDataServlet</servlet-name>
+        <url-pattern>/SharedDataServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ReadParametersServlet</servlet-name>
+        <url-pattern>/ReadParametersServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>IndexDisplayServlet</servlet-name>
+        <url-pattern>/IndexDisplayServlet</url-pattern>
+    </servlet-mapping>
+
+<servlet-mapping>
+        <servlet-name>AnotherServlet</servlet-name>
+        <url-pattern>/AnotherServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>

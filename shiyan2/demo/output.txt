@@ -1,0 +1,13 @@
+.
+./demo.iml
+./web
+./web/index.jsp
+./web/WEB-INF
+./web/WEB-INF/web.xml
+./output.txt
+./src
+./src/com
+./src/com/yourpackage
+./src/com/yourpackage/SharedDataServlet.java
+./src/com/yourpackage/ReadParametersServlet.java
+./src/com/yourpackage/IndexDisplayServlet.java

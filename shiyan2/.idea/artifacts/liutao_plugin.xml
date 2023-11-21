@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="liutao_plugin">
+    <output-path>$PROJECT_DIR$/lib</output-path>
+    <root id="archive" name="liutao_plugin.jar">
+      <element id="module-output" name="liutao_plugin" />
+    </root>
+  </artifact>
+</component>
