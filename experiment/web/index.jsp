@@ -28,10 +28,10 @@
   <h1>大佐的实验</h1>
   <div style="text-align: center;">
     <ul>
-      <li><a href="">Link 1</a></li>
+      <li><a href="http://localhost:8080/experiment2_war_exploded/">实验二</a></li>
       <li><a href="http://localhost:8080/experiment2_war_exploded/">实验2</a></li>
-      <li><a href="#">Link 3</a></li>
-      <li><a href="#">Link 4</a></li>
+      <li><a href="http://localhost:8080/experiment3_war_exploded/">实验3</a></li>
+      <li><a href="http://localhost:8080/experiment2_war_exploded/">实验四</a></li>
     </ul>
   </div>
   </body>

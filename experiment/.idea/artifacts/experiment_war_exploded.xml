@@ -8,6 +8,7 @@
           <element id="module-output" name="experiment" />
         </element>
       </element>
+      <element id="dir-copy" path="$PROJECT_DIR$/experiment3/web" />
     </root>
   </artifact>
 </component>

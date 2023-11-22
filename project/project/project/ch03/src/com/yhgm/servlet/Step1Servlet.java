@@ -9,7 +9,6 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
-
 @WebServlet("/Step1Servlet")
 public class Step1Servlet extends HttpServlet {
     @Override
@@ -18,15 +17,15 @@ public class Step1Servlet extends HttpServlet {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         if (password == null || username == null) {
-            response.getWriter().print("¶Ô²»Æğ£¬ÓÃ»§Ãû»òÃÜÂëÎª¿Õ£¡");
+            response.getWriter().print("ï¿½Ô²ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½Õ£ï¿½");
             return;
         }
         if (!"123456".equals(password)) {
-            response.getWriter().print("¶Ô²»Æğ£¬ÓÃ»§Ãû»òÃÜÂë´íÎó£¡");
+            response.getWriter().print("ï¿½Ô²ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
             return;
         }
-        response.getWriter().print("»¶Ó­Äã£º" + username + "</br>");
-        response.getWriter().print("ÄúµÄÃÜÂëÊÇ£º" + password);
+        response.getWriter().print("ï¿½ï¿½Ó­ï¿½ã£º" + username + "</br>");
+        response.getWriter().print("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç£ï¿½" + password);
     }
 
     @Override
