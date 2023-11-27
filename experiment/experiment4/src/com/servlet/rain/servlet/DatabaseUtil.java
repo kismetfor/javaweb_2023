@@ -1,4 +1,6 @@
-package com.jdbc.servelt;
+package com.servlet.rain.servlet;
+
+//数据库连接
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -12,8 +14,8 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-@WebServlet("/example7_1")
-public class example7_1 extends HttpServlet {
+@WebServlet("/DatabaseUtil")
+public class DatabaseUtil extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -31,13 +33,13 @@ public class example7_1 extends HttpServlet {
         }
 
         // JDBC连接参数
-        String url = "jdbc:mysql://localhost:3306/bookstore?useSSL=false&allowPublicKeyRetrieval=true";
+        String url = "jdbc:mysql://localhost:3306/bookstore?useSSL=false&serverTimezone=GMT";
         String user = "root";
         String password = "3345576297ltLT";
 
         try {
             // 步骤1: 加载数据库驱动程序（可以省略）数据库连接的对象
-              Class.forName("com.mysql.cj.jdbc.Driver");
+//              Class.forName("com.mysql.cj.jdbc.Driver");
 
             // 步骤2: 创建数据库连接
             Connection connection = DriverManager.getConnection(url, user, password);
@@ -66,4 +68,3 @@ public class example7_1 extends HttpServlet {
         }
     }
 }
-

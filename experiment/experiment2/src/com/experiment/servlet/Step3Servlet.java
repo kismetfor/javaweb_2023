@@ -1,5 +1,6 @@
 package com.experiment.servlet;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -15,9 +16,13 @@ public class Step3Servlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html;charset=UTF-8");
         req.getRequestDispatcher("/Servlet1").include(req, resp);
+
         req.getRequestDispatcher("/Servlet2").include(req, resp);
         req.getRequestDispatcher("/Step2Servlet").include(req, resp);
 
-        resp.sendRedirect(req.getContextPath() + "/index.jsp");
+//        resp.sendRedirect(req.getContextPath() + "/index.jsp");
+        resp.getWriter().println("<html><head><script>setTimeout(function(){ window.location.href='" +
+                req.getContextPath() + "/index.jsp'; }, 2000);</script></head><body></body></html>");
+
     }
 }

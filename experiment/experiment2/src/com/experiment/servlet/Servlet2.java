@@ -11,6 +11,7 @@ import java.io.IOException;
 @WebServlet("/Servlet2")
 public class Servlet2 extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.getWriter().println("this is from servlet2");
         // 获取ServletContext对象
         ServletContext context = getServletContext();
 
