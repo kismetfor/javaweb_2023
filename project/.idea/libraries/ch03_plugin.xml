@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ch03-plugin">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/project/project/ch03/web/WEB-INF/lib/ch03-plugin.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

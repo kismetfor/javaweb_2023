@@ -17,7 +17,7 @@ public class Step1Servlet extends HttpServlet {
             response.getWriter().print("请输入用户名和密码！");
             return;
         }
-        if (!"123456".equals(password)) {
+        if (!"123123".equals(password)) {
             response.getWriter().print("用户名或密码错误！");
             return;
         }
