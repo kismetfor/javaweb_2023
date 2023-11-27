@@ -12,16 +12,18 @@
 </head>
 <body>
 
-<form action="/your-context-root/uploadServlet" method="post" enctype="multipart/form-data">
-  <label for="file1">选择文件：</label>
-  <input type="file" id="file1" name="file1"><br>
-
-  <label for="file2">选择文件：</label>
-  <input type="file" id="file2" name="file2"><br>
-
-  <!-- 添加更多文件上传的input -->
-
-  <input type="submit" value="上传">
+<form action="${pageContext.request.contextPath}/UploadServlet" method="post" enctype="multipart/form-data">
+  上传文件：<input type="file" name="file"> <input type="submit" value="上传">
+</form>
+</fieldset>
+<br>
+<fieldset>
+  <legend>上传多个文件</legend>
+  <form action="UploadServlet" method="post" enctype="multipart/form-data">
+    上传文件：
+    <input type="file" name="file1">
+    <input type="file" name="file2">
+    <input type="submit" value="上传">
 </form>
 </body>
 </html>

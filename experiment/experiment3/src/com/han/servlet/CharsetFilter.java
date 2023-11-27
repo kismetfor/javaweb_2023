@@ -18,6 +18,11 @@ public class CharsetFilter implements Filter {
     }
 
     @Override
+    public void destroy() {
+        // 在过滤器被销毁前执行的清理操作
+    }
+
+    @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
             throws IOException, ServletException {
         request.setCharacterEncoding(encoding);
@@ -25,8 +30,5 @@ public class CharsetFilter implements Filter {
         chain.doFilter(request, response);
     }
 
-    @Override
-    public void destroy() {
-        // 在过滤器被销毁前执行的清理操作
-    }
+
 }

@@ -16,7 +16,7 @@
     要求：用登录验证的方式测试效果。</p>
   <a href="http://localhost:8080/experiment3_war_exploded/Step1.jsp">Step1</a>
   <p>2．使用Servlet 3.0原生功能实现文件上传。</p>
-  <a href="">Step2</a>
+  <a href="Step2.jsp">Step2</a>
   <p>3．创建一个自定义的插件并使用它。</p>
   <a href="Step3">Step3</a>
   </body>
