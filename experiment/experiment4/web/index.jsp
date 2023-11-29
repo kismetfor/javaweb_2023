@@ -14,14 +14,21 @@
   <h1>实验四 使用JDBC及EL、JSTL技术 </h1>
   <p>1．1．创建MySQL数据表bookstore (id,name／书名，author／作者，press／出版社，amount／数量）。</p>
   <p>要求：实现对数据表bookstore的增删改查操作。（可控制台演示结果）</p>
-  <a href="http://localhost:8080/experiment4_war_exploded/DatabaseUtil">点击跳转step1</a>
+  <a href="http://localhost:8080/experiment4_war_exploded/DatabaseUtil">点击查询books中的所有书籍</a>
   <br>
-  <a href="http://localhost:8080/experiment4_war_exploded/BookManagerServlet">BookManagerServlet</a>
+  <br>
+  <br>
+  <a href="http://localhost:8080/experiment4_war_exploded/BuyServlet">点击购买书籍</a>
+  <br>
+  <br>
+  <br>
+  <a href="http://localhost:8080/experiment4_war_exploded/DeleteServlet">点击删除书籍</a>
+  <br>
+  <br>
 
-  <a href="http://localhost:8080/experiment4_war_exploded/DatabaseUtil">DatabaseUtil</a>
   <p>2．参照教材案例，对数据表bookstore实现分页功能。</p>
   <p>要求：运用EL、JSTL技术对教材案例进行改写。</p>
-  <a href="http://localhost:8080/experiment2_war_exploded/Step2Servlet">点击跳转step2</a>
+  <a href="http://localhost:8080/experiment4_war_exploded/Step2Servlet">点击跳转step2</a>
 
   </body>
 </html>

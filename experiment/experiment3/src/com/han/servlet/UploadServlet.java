@@ -11,14 +11,18 @@ import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Collection;
-
 @WebServlet("/UploadServlet")
 @MultipartConfig
 public class UploadServlet extends HttpServlet {
+
+    private static final String SAVE_DIRECTORY = "/Users/rain/Desktop/javaweb/experiment/experiment3/web/file";
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String savePath = "/Users/rain/Desktop/javaweb/experiment/experiment3/web/file"; // 修改为你的保存路径
-        File fileSaveDir = new File(savePath);
+        response.setContentType("text/html; charset=UTF-8");
+        response.setCharacterEncoding("UTF-8");
+
+        File fileSaveDir = new File(SAVE_DIRECTORY);
 
         if (!fileSaveDir.exists()) {
             fileSaveDir.mkdirs();
@@ -29,8 +33,7 @@ public class UploadServlet extends HttpServlet {
             String fileName = getSubmittedFileName(part);
 
             if (fileName != null && !fileName.isEmpty()) {
-                part.write(savePath + File.separator + fileName);
-                part.delete();
+                part.write(fileSaveDir + File.separator + fileName);
             }
         }
 
@@ -44,11 +47,13 @@ public class UploadServlet extends HttpServlet {
         doGet(request, response);
     }
 
-    // 从Part的header中提取文件名
     private String getSubmittedFileName(Part part) {
         for (String content : part.getHeader("content-disposition").split(";")) {
             if (content.trim().startsWith("filename")) {
-                return content.substring(content.indexOf('=') + 1).trim().replace("\"", "");
+                String fileName = content.substring(content.indexOf('=') + 1).trim().replace("\"", "");
+                // 处理文件名，确保安全性，例如防止包含路径信息
+                fileName = new File(fileName).getName();
+                return fileName;
             }
         }
         return null;

@@ -18,6 +18,6 @@
   <p>2．使用Servlet 3.0原生功能实现文件上传。</p>
   <a href="Step2.jsp">Step2</a>
   <p>3．创建一个自定义的插件并使用它。</p>
-  <a href="Step3">Step3</a>
+  <a href="http://localhost:8080/experiment3_war_exploded/myplugin">Step3</a>
   </body>
 </html>

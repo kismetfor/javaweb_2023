@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="myplugin">
+    <output-path>$PROJECT_DIR$/experiment3/web/WEB-INF/lib</output-path>
+    <root id="archive" name="myplugin.jar">
+      <element id="module-output" name="myplugin" />
+    </root>
+  </artifact>
+</component>
