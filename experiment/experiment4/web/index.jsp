@@ -28,7 +28,7 @@
 
   <p>2．参照教材案例，对数据表bookstore实现分页功能。</p>
   <p>要求：运用EL、JSTL技术对教材案例进行改写。</p>
-  <a href="http://localhost:8080/experiment4_war_exploded/Step2Servlet">点击跳转step2</a>
+  <a href="http://localhost:8080/experiment4_war_exploded/yourPage.jsp">点击跳转yourPage</a>
 
   </body>
 </html>

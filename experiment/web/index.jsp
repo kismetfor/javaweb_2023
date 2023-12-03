@@ -77,6 +77,10 @@
     <td>实验四</td>
     <td><a href="http://localhost:8080/experiment4_war_exploded/">跳转</a></td>
   </tr>
+  <tr>
+    <td>实验五</td>
+    <td><a href="http://localhost:8080/experiment5_war_exploded/">跳转</a></td>
+  </tr>
 </table>
 </body>
 </html>

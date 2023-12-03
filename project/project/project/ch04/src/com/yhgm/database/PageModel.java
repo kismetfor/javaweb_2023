@@ -2,10 +2,7 @@ package com.yhgm.database;
 
 import java.util.List;
 
-/**
- * Author:yanghua
- * Date:2023/10/26 14:35
- */
+
 public class PageModel<T> {
     private List<T> list;
     private Integer totalSize;

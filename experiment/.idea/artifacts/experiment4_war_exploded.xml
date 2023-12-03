@@ -9,6 +9,7 @@
         </element>
         <element id="directory" name="lib">
           <element id="file-copy" path="$USER_HOME$/Downloads/apache-tomcat-8.5.95/lib/tomcat-jdbc.jar" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/apache-tomcat-8.5.95/lib/mysql-connector-java-8.0.25.jar" />
         </element>
       </element>
       <element id="dir-copy" path="$PROJECT_DIR$/experiment4/web" />
