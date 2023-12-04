@@ -23,7 +23,7 @@
 
 <%
   Logger logger = Logger.getLogger("EmpServlet");
-  logger.info("Entering yourPage.jsp...");
+  logger.info("Entering Page.jsp...");
 %>
 
 <html>

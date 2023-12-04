@@ -7,6 +7,9 @@
         <element id="directory" name="classes">
           <element id="module-output" name="experiment3" />
         </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/experiment3/web/WEB-INF/lib/myplugin.jar" />
+        </element>
       </element>
     </root>
   </artifact>
