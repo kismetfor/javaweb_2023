@@ -1,24 +1,30 @@
 // Corp.java
-package com.example.beaninstantiationandassembly;
+package com.example.bean;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Corp {
-    //Corp [corpName（公司名）,staff（职员）)
     private String corpName;
-    private List<Employee> staff;
+    private List<Employee> staff = new ArrayList<>();
 
-    // 无参构造方法，Spring 默认使用此构造方法实例化对象
     public Corp() {
+
     }
 
-    // 1. 使用构造注入
-    public Corp(String corpName, List<Employee> staff) {
+    public Corp(String corpName, List staff) {
         this.corpName = corpName;
         this.staff = staff;
     }
 
-    // 2. 使用设值注入
+    public List<Employee> getStaff() {
+        return staff;
+    }
+
+    public String getCorpName() {
+        return corpName;
+    }
+
     public void setCorpName(String corpName) {
         this.corpName = corpName;
     }
@@ -27,5 +33,4 @@ public class Corp {
         this.staff = staff;
     }
 
-    // 省略其他方法
 }

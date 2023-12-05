@@ -1,8 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
+    <!--老师的视频-->
     <bean id="user" class="cwnu.comp.bean.User">
         <property name="name" value="李明" />
+    </bean>
+    <!--设值注入-->
+    <bean id="corpBySetter" class="com.example.bean.Corp">
+        <property name="corpName" value="companyA"/>
+        <property name="staff" >
+            <util:list>
+                <bean class="com.example.bean.Employee">
+                    <property name="name" value="设值一号"/>
+                    <property name="workNumber" value="001"/>
+                </bean>
+                <bean class="com.example.bean.Employee">
+                    <property name="name" value="设值2号"/>
+                    <property name="workNumber" value="002"/>
+                </bean>
+            </util:list>
+        </property>
+
+    </bean>
+    <!--构造注入-->
+    <bean id="corpConstructor" class="com.example.bean.Corp">
+        <constructor-arg value="CompanyB"/>
+        <constructor-arg>
+            <list>
+                <bean class="com.example.bean.Employee">
+                    <property name="name" value="构造注入1"/>
+                    <property name="workNumber" value="001"/>
+                </bean>
+                <bean class="com.example.bean.Employee">
+                    <property name="name" value="构造注入2"/>
+                    <property name="workNumber" value="002"/>
+                </bean>
+            </list>
+        </constructor-arg>
     </bean>
 </beans>
