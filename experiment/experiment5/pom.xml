@@ -4,7 +4,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>cwnu.comp</groupId>
+<!--    <groupId>cwnu.comp</groupId>-->
+<!--    <artifactId>experiment5</artifactId>-->
+<!--    <version>1.0-SNAPSHOT</version>-->
+
+    <groupId>com.example.bean</groupId>
     <artifactId>experiment5</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -27,18 +31,17 @@
             <scope>compile</scope>
         </dependency>
 
-<!--        &lt;!&ndash; AspectJ依赖 &ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>org.aspectj</groupId>-->
-<!--            <artifactId>aspectjrt</artifactId>-->
-<!--            <version>1.9.7</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>org.aspectj</groupId>-->
-<!--            <artifactId>aspectjweaver</artifactId>-->
-<!--            <version>1.9.7</version>-->
-<!--        </dependency>-->
-
+        <!-- AspectJ依赖 -->
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjrt</artifactId>
+            <version>1.9.7</version>
+        </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.9.7</version>
+        </dependency>
     </dependencies>
 
 </project>

@@ -32,8 +32,8 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "员工信息="+'{'+"姓名='"+name+'\''+
-                '}';
+        return "员工信息: "+'<'+"姓名='"+name+'\''+
+                '>';
     }
 }
 

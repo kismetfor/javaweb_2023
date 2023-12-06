@@ -9,10 +9,9 @@ public class Corp {
     private List<Employee> staff = new ArrayList<>();
 
     public Corp() {
-
     }
 
-    public Corp(String corpName, List staff) {
+    public Corp(String corpName, List<Employee> staff) {
         this.corpName = corpName;
         this.staff = staff;
     }
@@ -33,4 +32,11 @@ public class Corp {
         this.staff = staff;
     }
 
+
+//    把实验五的Corp类作为目标类，在Corp类中添加方法addWorker(Employee emp）作为实现AOP的切入点。
+    public void add_worker(Employee employee) {
+        //添加员工
+        staff.add(employee);
+        System.out.println("****************员工添加成功! : " +employee.toString() + "********");
+    }
 }
