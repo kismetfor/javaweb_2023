@@ -1,20 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
        xmlns:aop="http://www.springframework.org/schema/aop"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
-    <!--老师的视频-->
-<!--    <bean id="User" class="cwnu.comp.bean.User">-->
-<!--        <property name="name" value="李明" />-->
-<!--    </bean>-->
-<!--    根据老师视频的实践-->
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd
+       http://www.springframework.org/schema/util
+       http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <!-- 老师的视频 -->
+    <!--
+    <bean id="User" class="cwnu.comp.bean.User">
+        <property name="name" value="李明" />
+    </bean>
+    -->
+
+    <!-- 根据老师视频的实践 -->
     <bean id="user" class="com.example.bean.User">
         <property name="name" value="202113820218刘涛" />
     </bean>
-<!--    <bean> 元素用于定义一个Spring Bean。-->
 
-    <!--设值注入-->
-<!--    可以在不修改类的前提下更改属性值，允许对单个属性进行灵活设置。适用于有大量可选属性的Bean，或者需要动态更改属性值的情况。-->
+    <!-- 设值注入 -->
+    <!--
+    可以在不修改类的前提下更改属性值，允许对单个属性进行灵活设置。
+    适用于有大量可选属性的Bean，或者需要动态更改属性值的情况。
+    -->
     <bean id="bySetter" class="com.example.bean.Corp">
         <property name="staff">
             <util:list>
@@ -30,10 +42,12 @@
         </property>
         <property name="corpName" value="设值注入公司"/>
     </bean>
-<!--    <util:list> 元素表示创建一个Spring的List实例，其中包含多个<bean>元素。-->
 
-    <!--构造注入-->
-    <!--    一旦Bean被实例化，就不可更改，构造函数的参数值在Bean创建时已经确定。适用于依赖项较少且在Bean创建时就已经确定的情况-->
+    <!-- 构造注入 -->
+    <!--
+    一旦Bean被实例化，就不可更改，构造函数的参数值在Bean创建时已经确定。
+    适用于依赖项较少且在Bean创建时就已经确定的情况
+    -->
     <bean id="byConstructor" class="com.example.bean.Corp">
         <constructor-arg>
             <list>
@@ -50,13 +64,9 @@
         <constructor-arg value="构造注入公司"/>
     </bean>
 
-
-<!--    实验六-->
-    <!-- 定义Corp Bean -->
-    <bean id="corp" class="com.example.bean.Corp">
-        <property name="corpName" value="CompanyA"/>
-    </bean>
-
+    <!-- 实验六 -->
+    <!-- 定义 Corp bean -->
+    <bean id="corp" class="com.example.bean.Corp"/>
     <!-- 定义Aspect -->
     <bean id="myAspect" class="com.example.bean.MyAspect"/>
 
@@ -70,4 +80,5 @@
             <aop:around method="aroundAdvice" pointcut-ref="addWorkerPointcut"/>
         </aop:aspect>
     </aop:config>
+
 </beans>

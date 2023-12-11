@@ -37,6 +37,6 @@ public class Corp {
     public void add_worker(Employee employee) {
         //添加员工
         staff.add(employee);
-        System.out.println("****************员工添加成功! : " +employee.toString() + "********");
+        System.out.println("------------员工添加成功! : " +employee.toString() + "------------");
     }
 }

@@ -13,7 +13,7 @@ public class TestAnnotation {
         System.out.println(corp.getCorpName()+corp.getStaff());
 
         // 调用 addWorker 方法
-        corp.add_worker(new Employee("李杰", 1));
+        corp.add_worker(new Employee("刘涛", 1));
 
         System.out.println("在调用addWorker之后的员工信息为:");
         System.out.println(corp.getCorpName()+corp.getStaff());

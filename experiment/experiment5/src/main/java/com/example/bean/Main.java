@@ -29,7 +29,7 @@ public class Main {
         System.out.println("设值装配: "+corpBySetter.getCorpName()+corpBySetter.getStaff());
 
         Corp corpByConstructor=(Corp) context.getBean("byConstructor");
-        System.out.println("构造注入: "+corpBySetter.getCorpName()+corpByConstructor.getStaff());
+        System.out.println("构造注入: "+corpByConstructor.getCorpName()+corpByConstructor.getStaff());
 
     }
 }
