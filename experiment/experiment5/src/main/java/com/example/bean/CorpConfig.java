@@ -19,11 +19,11 @@ public class CorpConfig {
     @Bean("companyC")
     public Corp corpInfo(){
         Corp corp=new Corp();
-        corp.setCorpName("注解装配公司");
+        corp.setCorpName("618有限公司");
 
         List<Employee> staff=new ArrayList<>();
-        staff.add(new Employee("注解员工1",001));
-        staff.add(new Employee("注解员工2",002));
+        staff.add(new Employee("小鹏",001));
+        staff.add(new Employee("小朋",002));
 
         corp.setStaff(staff);
 

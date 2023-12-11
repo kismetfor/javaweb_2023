@@ -13,7 +13,7 @@ public class TestXml {
         System.out.println(corp.getCorpName() + corp.getStaff());
 
         // 调用 addWorker 方法
-        corp.add_worker(new Employee("刘涛", 1));
+        corp.add_worker(new Employee("hc", 1));
 
         System.out.println("在调用add_worker方法之后-----:");
         System.out.println(corp.getCorpName() + corp.getStaff());
