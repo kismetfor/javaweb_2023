@@ -16,7 +16,7 @@ public class Main {
         User user = (User) context0.getBean("user");
 
         System.out.println(user);
-        System.out.println("<----大作的实验五---->");
+        System.out.println("<----张雨潇丸子的实验6---->");
 
 
         // 使用注解配置加载Spring容器

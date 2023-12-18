@@ -19,7 +19,6 @@ public class TransactionTest {
             Book newBook = new Book(123, "启动", "Author", "Press", 10);
             bookService.addBookAndThenUpdate(newBook);
 
-            System.out.println("事务提交成功！");
         } catch (Exception e) {
             System.out.println("事务回滚，发生异常：" + e.getMessage());
         }

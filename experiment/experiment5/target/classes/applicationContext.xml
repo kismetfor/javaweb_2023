@@ -71,11 +71,11 @@
         <property name="staff">
             <util:list>
                 <bean class="com.example.bean.Employee">
-                    <property name="name" value="小明"/>
+                    <property name="name" value="章鱼小"/>
                     <property name="workNumber" value="001"/>
                 </bean>
                 <bean class="com.example.bean.Employee">
-                    <property name="name" value="小方"/>
+                    <property name="name" value="章鱼大"/>
 
                     <property name="workNumber" value="002"/>
                 </bean>
