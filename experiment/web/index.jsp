@@ -62,8 +62,8 @@
     <th>链接</th>
   </tr>
   <tr>
-    <td>实验二</td>
-    <td><a href="http://localhost:8080/experiment2_war_exploded/">跳转</a></td>
+    <td>实验一</td>
+    <td><a href="http://localhost:8080/experiment1_war_exploded/">跳转</a></td>
   </tr>
   <tr>
     <td>实验2</td>
