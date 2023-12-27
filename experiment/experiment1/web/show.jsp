@@ -12,6 +12,6 @@
     <title>Title</title>
 </head>
 <body>
-
+<h2>欢迎访问, <jsp:include page="time.jsp" /></h2>
 </body>
 </html>

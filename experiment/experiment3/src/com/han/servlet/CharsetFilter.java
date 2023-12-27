@@ -29,6 +29,4 @@ public class CharsetFilter implements Filter {
         response.setCharacterEncoding(encoding);
         chain.doFilter(request, response);
     }
-
-
 }

@@ -11,5 +11,6 @@
     <title>Title</title>
 </head>
 <body>
+<h2>现在的时间是: <%= new java.util.Date() %></h2>
 </body>
 </html>
