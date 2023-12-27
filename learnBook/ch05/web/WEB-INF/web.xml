@@ -3,10 +3,31 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+    <!-- 过滤器声明 -->
+    <filter>
+        <!-- 过滤器名称 -->
+        <filter-name>demo</filter-name>
+        <!-- 过滤器的完整类名 -->
+        <filter-class>com.liutao.filt.demo</filter-class>
+        <!-- 配置过滤器的初始化参数 -->
+        <init-param>
+            <param-name>count</param-name>
+            <param-value>10</param-value>
+        </init-param>
+    </filter>
+
+    <!-- 过滤器的映射 -->
+    <filter-mapping>
+        <!-- 过滤器名称 -->
+        <filter-name>demo</filter-name>
+        <!-- 匹配的URL模式，这里是 /index.jsp -->
+        <url-pattern>/index.jsp</url-pattern>
+    </filter-mapping>
+
     <!-- 配置 Servlet -->
     <servlet>
         <servlet-name>quickstart</servlet-name>
-        <servlet-class>com.vincent.servlet.ServletQuickStart</servlet-class>
+        <servlet-class>com.liutao.www.ServletQuickStart</servlet-class>
         <init-param>
             <param-name>key</param-name>
             <param-value>value</param-value>
