@@ -19,5 +19,18 @@
   <p><a href="http://localhost:8080//ch03_war_exploded/ch325.jsp">ch325</a></p>
   <p><a href="http://localhost:8080//ch03_war_exploded/ch325.jsp">ch325</a></p>
   <p><a href="http://localhost:8080//ch03_war_exploded/ch331.jsp">ch331</a></p>
+  <p><a href="http://localhost:8080//ch03_war_exploded/ch332.jsp">ch332</a></p>
+  <p><a href="http://localhost:8080//ch03_war_exploded/ch341.jsp">ch341</a></p>
+  <p><a href="http://localhost:8080//ch03_war_exploded/ch345.jsp">ch345</a></p>
+  <p><a href="http://localhost:8080//ch03_war_exploded/ch351.jsp">ch351</a></p>
+  <p><a href="http://localhost:8080//ch03_war_exploded/ch352.jsp">ch352</a></p>
+  <p><a href="http://localhost:8080//ch03_war_exploded/ch360.jsp">ch360</a></p>
+  <p><a href="http://localhost:8080//ch03_war_exploded/ch362.jsp">ch362</a></p>
+  <p><a href="http://localhost:8080//ch03_war_exploded/ch371.jsp">ch371</a></p>
+  <p><a href="http://localhost:8080//ch03_war_exploded/jsp_pagecontext.jsp">jsp_pagecontext</a></p>
+  <p><a href="http://localhost:8080//ch03_war_exploded/jsp_pagecontext2.jsp">jsp_pagecontext2</a></p>
+  <p><a href="http://localhost:8080//ch03_war_exploded/ch372.jsp">ch372</a></p>
+  <p><a href="http://localhost:8080//ch03_war_exploded/ch373.jsp">ch373</a></p>
+  <p><a href="http://localhost:8080//ch03_war_exploded/ch374.jsp">ch374</a></p>
   </body>
 </html>

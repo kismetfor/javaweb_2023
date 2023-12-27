@@ -11,6 +11,8 @@
     <title>$Title$</title>
   </head>
   <body>
-  $END$
+  <h1>第五章</h1>
+  <p><a href="http://localhost:8080//ch03_war_exploded/ch532.jsp">ch532</a></p>
+  <p><a href="http://localhost:8080//ch03_war_exploded/ch533.jsp">ch533</a></p>
   </body>
 </html>

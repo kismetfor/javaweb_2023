@@ -3,4 +3,36 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+    <context-param>
+        <param-name>contextconfigLocation</param-name>
+        <param-value>classpath:applicationContext.xml</param-value>
+    </context-param>
+    <context-param>
+        <param-name>emailAddr</param-name>
+        <param-value>kismetfor33455@163.com</param-value>
+    </context-param>
+    <context-param>
+        <param-name>webVersion</param-name>
+        <param-value>V0.101</param-value>
+    </context-param>
+    <display-name>zhangyuxiao</display-name>
+
+    <servlet>
+        <servlet-name>config</servlet-name>
+        <jsp-file>/ch372.jsp</jsp-file>
+        <init-param>
+            <param-name>name</param-name>
+            <param-value>vincent</param-value>
+        </init-param>
+        <init-param>
+            <param-name>age</param-name>
+            <param-value>30</param-value>
+        </init-param>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>config</servlet-name>
+        <url-pattern>/config</url-pattern>
+    </servlet-mapping>
+
 </web-app>
