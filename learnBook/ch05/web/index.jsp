@@ -23,5 +23,6 @@
   <p><a href="http://localhost:8080//ch05_war_exploded/ch960.jsp">ch960</a></p>
   <p><a href="http://localhost:8080//ch05_war_exploded/ch962.jsp">ch962</a></p>
   <p><a href="http://localhost:8080//ch05_war_exploded/ch962.jsp">ch963</a></p>
+  <p><a href="http://localhost:8080//ch05_war_exploded/ch963.jsp">显示数据Servlet to jsp</a></p>
   </body>
 </html>
