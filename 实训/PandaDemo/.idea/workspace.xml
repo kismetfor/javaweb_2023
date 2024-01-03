@@ -12,7 +12,11 @@
     <list default="true" id="73cfe1da-31d2-4aa0-bec8-f479cf5e38c1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/controller/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cn/controller/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/c3p0-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/c3p0-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/PandaDemo.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/PandaDemo.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/PandaDemo/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/PandaDemo/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/PandaDemo/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/PandaDemo/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/c3p0-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/c3p0-config.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +204,7 @@
       <workItem from="1704196586139" duration="23000" />
       <workItem from="1704197595657" duration="916000" />
       <workItem from="1704248107083" duration="3913000" />
-      <workItem from="1704264234151" duration="1795000" />
+      <workItem from="1704264234151" duration="2685000" />
     </task>
     <servers />
   </component>

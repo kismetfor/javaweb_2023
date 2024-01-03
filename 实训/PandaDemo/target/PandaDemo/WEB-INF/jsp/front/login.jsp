@@ -25,7 +25,7 @@
                 <h2 class="login_title">
                     大佐旅游网账号登录
                 </h2>
-                <form action="/loginServlet" method="post">
+                <form action="/LoginServlet" method="post">
                     <ul class="panda_form">
                         <c:if test="${requestScope.error != null}">
                             <li>
