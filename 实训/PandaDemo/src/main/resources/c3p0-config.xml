@@ -4,7 +4,7 @@
         <property name="driverClass">com.mysql.jdbc.Driver</property>
         <property name="jdbcUrl">jdbc:mysql://localhost:3306/panda</property>
         <property name="user">root</property>
-        <property name="password">root</property>
+        <property name="password">3345576297ltLT</property>
         <property name="initialPoolSize">15</property>
         <property name="maxIdleTime">40</property>
         <property name="maxPoolSize">150</property>

@@ -1,5 +1,9 @@
 package com.cn.controller;
 
+import com.cn.entity.User;
+import com.cn.service.UserService;
+import com.cn.service.UserServiceImpl;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -18,5 +22,7 @@ public class LoginServlet extends HttpServlet {
         String username = req.getParameter("username");
         String password = req.getParameter("password");
         System.out.println(username);
+        UserService userService = new UserServiceImpl();
+        User user = userService.getUserByNameAndPass(username,password);
     }
 }
